@@ -65,9 +65,9 @@
             border: 1px solid rgba(208, 177, 138, 0.35);
         }
 
-        /* Mobile No-Wrap Helper */
-        .no-wrap {
-            white-space: nowrap !important;
+        /* Mobile Inline Protection Helper */
+        .no-wrap-phrase {
+            white-space: nowrap;
             display: inline-block;
         }
 
@@ -100,19 +100,19 @@
                 L & W
             </a>
             <div class="hidden md:flex space-x-8 text-sm tracking-widest text-[#2D3834] font-light">
-                <a href="#about" class="hover:text-[#6A7B76] transition-colors py-1 relative group no-wrap">
+                <a href="#about" class="hover:text-[#6A7B76] transition-colors py-1 relative group whitespace-nowrap">
                     關於我們 ABOUT
                     <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-[#6A7B76] transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#moments" class="hover:text-[#6A7B76] transition-colors py-1 relative group no-wrap">
+                <a href="#moments" class="hover:text-[#6A7B76] transition-colors py-1 relative group whitespace-nowrap">
                     美好瞬間 MOMENTS
                     <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-[#6A7B76] transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#details" class="hover:text-[#6A7B76] transition-colors py-1 relative group no-wrap">
+                <a href="#details" class="hover:text-[#6A7B76] transition-colors py-1 relative group whitespace-nowrap">
                     婚禮詳情 DETAILS
                     <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-[#6A7B76] transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#rsvp" class="hover:text-[#6A7B76] transition-colors py-1 relative group no-wrap">
+                <a href="#rsvp" class="hover:text-[#6A7B76] transition-colors py-1 relative group whitespace-nowrap">
                     出席回函 RSVP
                     <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-[#6A7B76] transition-all duration-300 group-hover:w-full"></span>
                 </a>
@@ -143,14 +143,14 @@
 
         <!-- Hero Text Content -->
         <div class="relative z-10 text-center px-4 text-white max-w-3xl mx-auto flex flex-col items-center mb-4">
-            <p class="font-cormorant text-base md:text-xl tracking-[0.3em] uppercase mb-2 text-white font-semibold drop-shadow-lg">
+            <p class="font-cormorant text-base md:text-xl tracking-[0.3em] uppercase mb-2 text-white font-bold drop-shadow-lg">
                 SAVE THE DATE
             </p>
-            <h1 class="font-cormorant text-3xl md:text-5xl font-semibold tracking-wide mb-2 drop-shadow-lg">
-                <span class="no-wrap">林上軒 LIN</span> <span class="font-serif italic text-xl md:text-3xl text-[#D0B18A] mx-1">&</span> <span class="no-wrap">徐瑋翎 WEI</span>
+            <h1 class="font-cormorant text-3xl md:text-5xl font-bold tracking-wide mb-2 drop-shadow-lg">
+                <span class="no-wrap-phrase">林上軒 LIN</span> <span class="font-serif italic text-xl md:text-3xl text-[#D0B18A] mx-1">&</span> <span class="no-wrap-phrase">徐瑋翎 WEI</span>
             </h1>
             <div class="w-16 h-[2px] bg-white/80 my-3"></div>
-            <p class="text-sm md:text-base tracking-[0.25em] text-white font-semibold drop-shadow-lg">
+            <p class="text-sm md:text-base tracking-[0.25em] text-white font-bold drop-shadow-lg">
                 2026 . 11 . 22
             </p>
         </div>
@@ -234,7 +234,7 @@
     </div>
 
     <!-- Wedding Details V-Card Section -->
-    <section id="details" class="py-20 px-6 bg-[#6A7B76]/10">
+    <section id="details" class="py-20 px-4 md:px-6 bg-[#6A7B76]/10">
         <div class="max-w-2xl mx-auto space-y-8">
             <div class="text-center space-y-2">
                 <p class="font-cormorant text-sm tracking-[0.3em] text-[#D0B18A] uppercase font-semibold">WEDDING DETAILS</p>
@@ -243,7 +243,7 @@
             </div>
 
             <!-- V-Card Content -->
-            <div class="v-card rounded-3xl p-8 space-y-8">
+            <div class="v-card rounded-3xl p-6 md:p-8 space-y-8">
                 <!-- Date and Time -->
                 <div class="text-center space-y-2 border-b border-[#6A7B76]/20 pb-6">
                     <p class="font-cormorant text-xs tracking-widest text-[#D0B18A] uppercase font-semibold">DATE & TIME</p>
@@ -254,8 +254,8 @@
                 <!-- Venue Info -->
                 <div class="text-center space-y-2 border-b border-[#6A7B76]/20 pb-6">
                     <p class="font-cormorant text-xs tracking-widest text-[#D0B18A] uppercase font-semibold">VENUE LOCATION</p>
-                    <h3 class="text-xl md:text-2xl font-light text-[#2D3834] font-serifTC no-wrap">台北喜來登大飯店 B2F 壽喜廳</h3>
-                    <p class="text-sm text-[#2D3834]/80 font-serifTC no-wrap">台北市中正區忠孝東路一段12號</p>
+                    <h3 class="text-lg md:text-2xl font-light text-[#2D3834] font-serifTC leading-snug">台北喜來登大飯店 B2F 壽喜廳</h3>
+                    <p class="text-xs md:text-sm text-[#2D3834]/80 font-serifTC leading-normal">台北市中正區忠孝東路一段12號</p>
                 </div>
 
                 <!-- Dress Code -->
@@ -265,25 +265,25 @@
                 </div>
             </div>
 
-            <!-- Transportation Accordion -->
+            <!-- Transportation Accordion (Fixed Mobile Clipping) -->
             <div class="v-card rounded-3xl overflow-hidden">
-                <button onclick="toggleAccordion()" class="w-full p-6 text-left flex justify-between items-center hover:bg-[#6A7B76]/5 transition-colors focus:outline-none">
-                    <span class="font-serifTC text-base md:text-lg tracking-wider text-[#2D3834]">交通指引 LOCATION & TRANSPORTATION</span>
-                    <span id="accordionIcon" class="text-[#6A7B76] text-2xl font-light transition-transform duration-300">+</span>
+                <button onclick="toggleAccordion()" class="w-full p-5 md:p-6 text-left flex justify-between items-center hover:bg-[#6A7B76]/5 transition-colors focus:outline-none">
+                    <span class="font-serifTC text-sm md:text-lg tracking-wider text-[#2D3834] pr-2">交通指引 LOCATION & TRANSPORTATION</span>
+                    <span id="accordionIcon" class="text-[#6A7B76] text-xl md:text-2xl font-light transition-transform duration-300 flex-shrink-0">+</span>
                 </button>
                 <div id="accordionContent" class="accordion-content">
-                    <div class="p-6 pt-2 border-t border-[#6A7B76]/15 space-y-4 text-sm text-[#2D3834]/90 leading-relaxed font-serifTC">
+                    <div class="p-5 md:p-6 pt-2 border-t border-[#6A7B76]/15 space-y-4 text-xs md:text-sm text-[#2D3834]/90 leading-relaxed font-serifTC">
                         <div>
                             <h4 class="font-semibold text-[#6A7B76] mb-1">【捷運搭乘】</h4>
-                            <p class="no-wrap">捷運板南線至 <span class="font-medium text-[#6A7B76]">善導寺站</span>，自 2 號出口步行約 1 分鐘即可抵達。</p>
+                            <p class="leading-relaxed">捷運板南線至 <span class="font-medium text-[#6A7B76] no-wrap-phrase">善導寺站</span>，自 2 號出口步行約 1 分鐘即可抵達。</p>
                         </div>
                         <div>
                             <h4 class="font-semibold text-[#6A7B76] mb-1">【公車搭乘】</h4>
-                            <p class="no-wrap">搭乘公車至 <span class="font-medium text-[#6A7B76]">捷運善導寺站</span>，步行即可抵達 <span class="font-medium text-[#6A7B76]">台北喜來登大飯店</span>。</p>
+                            <p class="leading-relaxed">搭乘公車至 <span class="font-medium text-[#6A7B76] no-wrap-phrase">捷運善導寺站</span>，步行即可抵達 <span class="font-medium text-[#6A7B76] no-wrap-phrase">台北喜來登大飯店</span>。</p>
                         </div>
                         <div>
                             <h4 class="font-semibold text-[#6A7B76] mb-1">【自行開車 / 停車資訊】</h4>
-                            <p class="no-wrap">飯店地下停車場位於 <span class="font-medium text-[#6A7B76]">台北市中正區忠孝東路一段12號</span>，提供賓客免費停車折抵。</p>
+                            <p class="leading-relaxed">飯店地下停車場位於 <span class="font-medium text-[#6A7B76] no-wrap-phrase">台北市中正區忠孝東路一段12號</span>，提供賓客免費停車折抵。</p>
                         </div>
                     </div>
                 </div>
@@ -304,7 +304,7 @@
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){handleFormSuccess();}"></iframe>
 
         <!-- Form Element -->
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSeRL-Jxl7yafIKL4thJqwqJZyzehj4GSiEp6n_owk5WBYiNSg/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;" class="v-card rounded-3xl p-8 space-y-6">
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSeRL-Jxl7yafIKL4thJqwqJZyzehj4GSiEp6n_owk5WBYiNSg/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;" class="v-card rounded-3xl p-6 md:p-8 space-y-6">
 
             <!-- Field 1: Name NAME -->
             <div class="space-y-2">
@@ -441,7 +441,7 @@
         setInterval(updateCountdown, 1000);
         updateCountdown();
 
-        // Accordion Toggle Logic
+        // Accordion Toggle Logic (Auto adjust height dynamically)
         function toggleAccordion() {
             const content = document.getElementById("accordionContent");
             const icon = document.getElementById("accordionIcon");
@@ -454,6 +454,14 @@
                 icon.innerText = "−";
             }
         }
+
+        // Auto-recalculate accordion height on resize if open
+        window.addEventListener('resize', function() {
+            const content = document.getElementById("accordionContent");
+            if (content.style.maxHeight) {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
 
         // Dynamic Form Fields Logic
         function toggleDynamicFields() {
