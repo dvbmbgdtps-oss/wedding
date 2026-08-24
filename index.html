@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEDDING INVITATION | 林上軒 LIN & 徐瑋翎 WEI</title>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Noto+Serif+TC:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'morandi-gold': '#d4a373',
-                        'morandi-green': '#8da399',
-                        'morandi-cream': '#fbf9f5',
-                        'morandi-dark': '#3a3d3c',
-                        'morandi-accent': '#b07d62',
-                        'morandi-card': '#ffffff'
+                        'terracotta': '#B57A59',    /* 莫蘭迪陶土棕 (主色) */
+                        'linen': '#C7B299',         /* 亞麻灰褐 (輔色) */
+                        'sand-white': '#F2ECE4',    /* 暖沙白 (背景色) */
+                        'earth-dark': '#3A322C',     /* 深土灰 (文字色) */
+                        'terracotta-dark': '#965E3E'
                     },
                     fontFamily: {
                         cormorant: ['"Cormorant Garamond"', 'serif'],
@@ -29,37 +31,38 @@
             }
         }
     </script>
+
     <style>
         body {
             font-family: 'Noto Serif TC', 'Cormorant Garamond', serif;
-            background-color: #fbf9f5;
-            color: #3a3d3c;
+            background-color: #F2ECE4;
+            color: #3A322C;
             overflow-x: hidden;
         }
 
         /* Glassmorphism Navigation Bar */
         .glass-nav {
-            background: rgba(251, 249, 245, 0.88);
+            background: rgba(242, 236, 228, 0.88);
             backdrop-filter: blur(14px);
             -webkit-backdrop-filter: blur(14px);
-            border-bottom: 1px solid rgba(212, 163, 115, 0.22);
+            border-bottom: 1px solid rgba(181, 122, 89, 0.22);
         }
 
         /* Glowing Soft Cards for Countdown Timer */
         .glow-card {
             background: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 10px 30px -5px rgba(212, 163, 115, 0.18),
+            box-shadow: 0 10px 30px -5px rgba(181, 122, 89, 0.18),
                         0 0 20px 2px rgba(255, 255, 255, 0.8);
-            border: 1px solid rgba(212, 163, 115, 0.25);
+            border: 1px solid rgba(181, 122, 89, 0.25);
             backdrop-filter: blur(8px);
         }
 
         /* V-Card Elevation */
         .v-card {
             background: #ffffff;
-            box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.05),
-                        0 0 15px 0 rgba(212, 163, 115, 0.08);
-            border: 1px solid rgba(141, 163, 153, 0.2);
+            box-shadow: 0 15px 35px -10px rgba(58, 50, 44, 0.05),
+                        0 0 15px 0 rgba(181, 122, 89, 0.08);
+            border: 1px solid rgba(199, 178, 153, 0.3);
         }
 
         /* Mobile No-Wrap Helper */
@@ -73,10 +76,10 @@
             width: 6px;
         }
         ::-webkit-scrollbar-track {
-            background: #fbf9f5;
+            background: #F2ECE4;
         }
         ::-webkit-scrollbar-thumb {
-            background: #8da399;
+            background: #C7B299;
             border-radius: 3px;
         }
 
@@ -88,45 +91,45 @@
         }
     </style>
 </head>
-<body class="antialiased selection:bg-[#d4a373] selection:text-white">
+<body class="antialiased selection:bg-[#B57A59] selection:text-white">
 
     <!-- Fixed Glassmorphism Navbar -->
     <nav class="glass-nav fixed top-0 left-0 right-0 z-50 transition-all duration-300">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#hero" class="font-cormorant text-2xl font-semibold tracking-wider text-[#d4a373] hover:opacity-80 transition-opacity">
+            <a href="#hero" class="font-cormorant text-2xl font-semibold tracking-wider text-[#B57A59] hover:opacity-80 transition-opacity">
                 L & W
             </a>
-            <div class="hidden md:flex space-x-8 text-sm tracking-widest text-[#3a3d3c] font-light">
-                <a href="#about" class="hover:text-[#d4a373] transition-colors py-1 relative group no-wrap">
+            <div class="hidden md:flex space-x-8 text-sm tracking-widest text-[#3A322C] font-light">
+                <a href="#about" class="hover:text-[#B57A59] transition-colors py-1 relative group no-wrap">
                     關於我們 ABOUT
-                    <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-[#d4a373] transition-all duration-300 group-hover:w-full"></span>
+                    <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-[#B57A59] transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#moments" class="hover:text-[#d4a373] transition-colors py-1 relative group no-wrap">
+                <a href="#moments" class="hover:text-[#B57A59] transition-colors py-1 relative group no-wrap">
                     美好瞬間 MOMENTS
-                    <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-[#d4a373] transition-all duration-300 group-hover:w-full"></span>
+                    <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-[#B57A59] transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#details" class="hover:text-[#d4a373] transition-colors py-1 relative group no-wrap">
+                <a href="#details" class="hover:text-[#B57A59] transition-colors py-1 relative group no-wrap">
                     婚禮詳情 DETAILS
-                    <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-[#d4a373] transition-all duration-300 group-hover:w-full"></span>
+                    <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-[#B57A59] transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#rsvp" class="hover:text-[#d4a373] transition-colors py-1 relative group no-wrap">
+                <a href="#rsvp" class="hover:text-[#B57A59] transition-colors py-1 relative group no-wrap">
                     出席回函 RSVP
-                    <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-[#d4a373] transition-all duration-300 group-hover:w-full"></span>
+                    <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-[#B57A59] transition-all duration-300 group-hover:w-full"></span>
                 </a>
             </div>
             <!-- Mobile Menu Toggle Button -->
-            <button id="mobileMenuBtn" class="md:hidden text-[#3a3d3c] focus:outline-none" aria-label="Toggle Menu">
+            <button id="mobileMenuBtn" class="md:hidden text-[#3A322C] focus:outline-none" aria-label="Toggle Menu">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path id="menuIcon" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
             </button>
         </div>
         <!-- Mobile Navigation Menu -->
-        <div id="mobileMenu" class="hidden md:hidden bg-[#fbf9f5]/95 border-b border-[#d4a373]/20 px-6 py-4 space-y-3 text-center">
-            <a href="#about" class="block text-sm py-2 text-[#3a3d3c] hover:text-[#d4a373]">關於我們 ABOUT</a>
-            <a href="#moments" class="block text-sm py-2 text-[#3a3d3c] hover:text-[#d4a373]">美好瞬間 MOMENTS</a>
-            <a href="#details" class="block text-sm py-2 text-[#3a3d3c] hover:text-[#d4a373]">婚禮詳情 DETAILS</a>
-            <a href="#rsvp" class="block text-sm py-2 text-[#3a3d3c] hover:text-[#d4a373]">出席回函 RSVP</a>
+        <div id="mobileMenu" class="hidden md:hidden bg-[#F2ECE4]/95 border-b border-[#B57A59]/20 px-6 py-4 space-y-3 text-center">
+            <a href="#about" class="block text-sm py-2 text-[#3A322C] hover:text-[#B57A59]">關於我們 ABOUT</a>
+            <a href="#moments" class="block text-sm py-2 text-[#3A322C] hover:text-[#B57A59]">美好瞬間 MOMENTS</a>
+            <a href="#details" class="block text-sm py-2 text-[#3A322C] hover:text-[#B57A59]">婚禮詳情 DETAILS</a>
+            <a href="#rsvp" class="block text-sm py-2 text-[#3A322C] hover:text-[#B57A59]">出席回函 RSVP</a>
         </div>
     </nav>
 
@@ -135,16 +138,16 @@
         <!-- Background Image with Soft Vignette Overlay -->
         <div class="absolute inset-0 z-0">
             <img src="https://i.postimg.cc/rmrJXfsS/365A0427-3.jpg" alt="Wedding Cover" class="w-full h-full object-cover object-center scale-105 transition-transform duration-1000">
-            <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/15 to-[#fbf9f5]"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-black/25 via-black/15 to-[#F2ECE4]"></div>
         </div>
 
         <!-- Hero Text Content (Positioned Low to Avoid Obstructing Faces) -->
         <div class="relative z-10 text-center px-4 text-white max-w-3xl mx-auto flex flex-col items-center mb-4">
-            <p class="font-cormorant text-base md:text-xl tracking-[0.3em] uppercase mb-2 text-amber-100/90 drop-shadow">
+            <p class="font-cormorant text-base md:text-xl tracking-[0.3em] uppercase mb-2 text-[#F2ECE4]/90 drop-shadow">
                 Save The Date
             </p>
             <h1 class="font-cormorant text-3xl md:text-5xl font-light tracking-wide mb-2 drop-shadow-md">
-                <span class="no-wrap">林上軒 LIN</span> <span class="font-serif italic text-xl md:text-3xl text-[#d4a373] mx-1">&</span> <span class="no-wrap">徐瑋翎 WEI</span>
+                <span class="no-wrap">林上軒 LIN</span> <span class="font-serif italic text-xl md:text-3xl text-[#C7B299] mx-1">&</span> <span class="no-wrap">徐瑋翎 WEI</span>
             </h1>
             <div class="w-12 h-[1px] bg-white/60 my-3"></div>
             <p class="text-xs md:text-sm tracking-[0.25em] text-stone-200 font-light drop-shadow">
@@ -163,39 +166,39 @@
     <!-- Countdown & About Section -->
     <section id="about" class="py-20 px-6 max-w-4xl mx-auto text-center relative z-20">
         <div class="mb-12 space-y-3">
-            <p class="font-cormorant text-sm tracking-[0.3em] text-[#8da399] uppercase">Counting Down To Our Big Day</p>
-            <h2 class="font-serifTC text-2xl md:text-3xl font-light text-[#3a3d3c] tracking-widest">婚禮倒數計時</h2>
-            <div class="w-10 h-[1px] bg-[#d4a373] mx-auto"></div>
+            <p class="font-cormorant text-sm tracking-[0.3em] text-[#C7B299] uppercase font-semibold">Counting Down To Our Big Day</p>
+            <h2 class="font-serifTC text-2xl md:text-3xl font-light text-[#3A322C] tracking-widest">婚禮倒數計時</h2>
+            <div class="w-10 h-[1px] bg-[#B57A59] mx-auto"></div>
         </div>
 
         <!-- Artistic Soft Glowing Countdown Timer -->
         <div class="grid grid-cols-4 gap-3 md:gap-6 max-w-2xl mx-auto mb-16">
             <!-- Days Card -->
             <div class="glow-card rounded-2xl p-4 md:p-6 flex flex-col items-center justify-center relative">
-                <span id="days" class="font-cormorant text-3xl md:text-5xl font-semibold text-[#d4a373]">00</span>
-                <span class="font-cormorant text-xs md:text-sm tracking-widest text-[#8da399] uppercase mt-1">Days</span>
+                <span id="days" class="font-cormorant text-3xl md:text-5xl font-semibold text-[#B57A59]">00</span>
+                <span class="font-cormorant text-xs md:text-sm tracking-widest text-[#C7B299] uppercase mt-1 font-medium">Days</span>
             </div>
             <!-- Hours Card with Vertical Separator Line -->
             <div class="glow-card rounded-2xl p-4 md:p-6 flex flex-col items-center justify-center relative">
-                <div class="absolute -left-1.5 md:-left-3 top-1/4 bottom-1/4 w-[1px] bg-[#d4a373]/30"></div>
-                <span id="hours" class="font-cormorant text-3xl md:text-5xl font-semibold text-[#d4a373]">00</span>
-                <span class="font-cormorant text-xs md:text-sm tracking-widest text-[#8da399] uppercase mt-1">Hours</span>
+                <div class="absolute -left-1.5 md:-left-3 top-1/4 bottom-1/4 w-[1px] bg-[#B57A59]/30"></div>
+                <span id="hours" class="font-cormorant text-3xl md:text-5xl font-semibold text-[#B57A59]">00</span>
+                <span class="font-cormorant text-xs md:text-sm tracking-widest text-[#C7B299] uppercase mt-1 font-medium">Hours</span>
             </div>
             <!-- Minutes Card with Vertical Separator Line -->
             <div class="glow-card rounded-2xl p-4 md:p-6 flex flex-col items-center justify-center relative">
-                <div class="absolute -left-1.5 md:-left-3 top-1/4 bottom-1/4 w-[1px] bg-[#d4a373]/30"></div>
-                <span id="minutes" class="font-cormorant text-3xl md:text-5xl font-semibold text-[#d4a373]">00</span>
-                <span class="font-cormorant text-xs md:text-sm tracking-widest text-[#8da399] uppercase mt-1">Mins</span>
+                <div class="absolute -left-1.5 md:-left-3 top-1/4 bottom-1/4 w-[1px] bg-[#B57A59]/30"></div>
+                <span id="minutes" class="font-cormorant text-3xl md:text-5xl font-semibold text-[#B57A59]">00</span>
+                <span class="font-cormorant text-xs md:text-sm tracking-widest text-[#C7B299] uppercase mt-1 font-medium">Mins</span>
             </div>
             <!-- Seconds Card with Vertical Separator Line -->
             <div class="glow-card rounded-2xl p-4 md:p-6 flex flex-col items-center justify-center relative">
-                <div class="absolute -left-1.5 md:-left-3 top-1/4 bottom-1/4 w-[1px] bg-[#d4a373]/30"></div>
-                <span id="seconds" class="font-cormorant text-3xl md:text-5xl font-semibold text-[#d4a373]">00</span>
-                <span class="font-cormorant text-xs md:text-sm tracking-widest text-[#8da399] uppercase mt-1">Secs</span>
+                <div class="absolute -left-1.5 md:-left-3 top-1/4 bottom-1/4 w-[1px] bg-[#B57A59]/30"></div>
+                <span id="seconds" class="font-cormorant text-3xl md:text-5xl font-semibold text-[#B57A59]">00</span>
+                <span class="font-cormorant text-xs md:text-sm tracking-widest text-[#C7B299] uppercase mt-1 font-medium">Secs</span>
             </div>
         </div>
 
-        <p class="text-sm md:text-base leading-relaxed text-[#3a3d3c]/80 font-light max-w-lg mx-auto">
+        <p class="text-sm md:text-base leading-relaxed text-[#3A322C]/85 font-light max-w-lg mx-auto">
             兩個人，一份愛，漫長歲月裡最美的約定。<br>
             誠摯地邀請您，一同見證我們展開人生新章節的歡愉時刻。
         </p>
@@ -204,9 +207,9 @@
     <!-- Sweet Moments Photo Showcase -->
     <section id="moments" class="py-16 px-6 max-w-5xl mx-auto">
         <div class="text-center mb-10 space-y-2">
-            <p class="font-cormorant text-sm tracking-[0.3em] text-[#8da399] uppercase">SWEET MOMENTS</p>
-            <h2 class="font-serifTC text-2xl md:text-3xl font-light text-[#3a3d3c] tracking-widest">美好瞬間</h2>
-            <div class="w-10 h-[1px] bg-[#d4a373] mx-auto"></div>
+            <p class="font-cormorant text-sm tracking-[0.3em] text-[#C7B299] uppercase font-semibold">SWEET MOMENTS</p>
+            <h2 class="font-serifTC text-2xl md:text-3xl font-light text-[#3A322C] tracking-widest">美好瞬間</h2>
+            <div class="w-10 h-[1px] bg-[#B57A59] mx-auto"></div>
         </div>
 
         <!-- High Resolution Decorative Photo Grid -->
@@ -227,61 +230,61 @@
     <div id="lightboxModal" class="fixed inset-0 z-50 bg-black/90 hidden backdrop-blur-md flex items-center justify-center p-4 transition-opacity duration-300" onclick="closeLightbox()">
         <div class="relative max-w-5xl max-h-[90vh] w-full flex justify-center">
             <img id="lightboxImg" src="" alt="Enlarged Photo" class="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl">
-            <button class="absolute -top-10 right-0 text-white text-3xl font-light hover:text-[#d4a373] transition-colors">&times;</button>
+            <button class="absolute -top-10 right-0 text-white text-3xl font-light hover:text-[#B57A59] transition-colors">&times;</button>
         </div>
     </div>
 
     <!-- Wedding Details V-Card Section -->
-    <section id="details" class="py-20 px-6 bg-[#8da399]/10">
+    <section id="details" class="py-20 px-6 bg-[#C7B299]/15">
         <div class="max-w-2xl mx-auto space-y-8">
             <div class="text-center space-y-2">
-                <p class="font-cormorant text-sm tracking-[0.3em] text-[#8da399] uppercase">WEDDING DETAILS</p>
-                <h2 class="font-serifTC text-2xl md:text-3xl font-light text-[#3a3d3c] tracking-widest">婚禮詳情</h2>
-                <div class="w-10 h-[1px] bg-[#d4a373] mx-auto"></div>
+                <p class="font-cormorant text-sm tracking-[0.3em] text-[#C7B299] uppercase font-semibold">WEDDING DETAILS</p>
+                <h2 class="font-serifTC text-2xl md:text-3xl font-light text-[#3A322C] tracking-widest">婚禮詳情</h2>
+                <div class="w-10 h-[1px] bg-[#B57A59] mx-auto"></div>
             </div>
 
             <!-- V-Card Content -->
             <div class="v-card rounded-3xl p-8 space-y-8">
                 <!-- Date and Time -->
-                <div class="text-center space-y-2 border-b border-[#d4a373]/20 pb-6">
-                    <p class="font-cormorant text-xs tracking-widest text-[#8da399] uppercase">DATE & TIME</p>
-                    <h3 class="text-xl md:text-2xl font-light text-[#3a3d3c] font-serifTC">2026 年 11 月 22 日（星期日）</h3>
-                    <p class="text-sm text-[#d4a373] font-serifTC tracking-wider">12:00 PM 午宴入席</p>
+                <div class="text-center space-y-2 border-b border-[#B57A59]/20 pb-6">
+                    <p class="font-cormorant text-xs tracking-widest text-[#C7B299] uppercase font-semibold">DATE & TIME</p>
+                    <h3 class="text-xl md:text-2xl font-light text-[#3A322C] font-serifTC">2026 年 11 月 22 日（星期日）</h3>
+                    <p class="text-sm text-[#B57A59] font-serifTC tracking-wider font-medium">12:00 PM 午宴入席</p>
                 </div>
 
                 <!-- Venue Info -->
-                <div class="text-center space-y-2 border-b border-[#d4a373]/20 pb-6">
-                    <p class="font-cormorant text-xs tracking-widest text-[#8da399] uppercase">VENUE LOCATION</p>
-                    <h3 class="text-xl md:text-2xl font-light text-[#3a3d3c] font-serifTC no-wrap">台北喜來登大飯店 B2F 壽喜廳</h3>
-                    <p class="text-sm text-[#3a3d3c]/80 font-serifTC no-wrap">台北市中正區忠孝東路一段12號</p>
+                <div class="text-center space-y-2 border-b border-[#B57A59]/20 pb-6">
+                    <p class="font-cormorant text-xs tracking-widest text-[#C7B299] uppercase font-semibold">VENUE LOCATION</p>
+                    <h3 class="text-xl md:text-2xl font-light text-[#3A322C] font-serifTC no-wrap">台北喜來登大飯店 B2F 壽喜廳</h3>
+                    <p class="text-sm text-[#3A322C]/80 font-serifTC no-wrap">台北市中正區忠孝東路一段12號</p>
                 </div>
 
                 <!-- Dress Code -->
                 <div class="text-center space-y-2">
-                    <p class="font-cormorant text-xs tracking-widest text-[#8da399] uppercase">DRESS CODE</p>
-                    <p class="text-sm text-[#3a3d3c] font-serifTC tracking-wider">莫蘭迪色系 / 正式輕便服裝 (Morandi Tones / Smart Casual)</p>
+                    <p class="font-cormorant text-xs tracking-widest text-[#C7B299] uppercase font-semibold">DRESS CODE</p>
+                    <p class="text-sm text-[#3A322C] font-serifTC tracking-wider">陶土大地色 / 暖沙莫蘭迪 / 正式輕便服裝 (Earth Tones / Smart Casual)</p>
                 </div>
             </div>
 
             <!-- Transportation Accordion -->
             <div class="v-card rounded-3xl overflow-hidden">
-                <button onclick="toggleAccordion()" class="w-full p-6 text-left flex justify-between items-center hover:bg-[#d4a373]/5 transition-colors focus:outline-none">
-                    <span class="font-serifTC text-base md:text-lg tracking-wider text-[#3a3d3c]">交通指引 LOCATION & TRANSPORTATION</span>
-                    <span id="accordionIcon" class="text-[#d4a373] text-2xl font-light transition-transform duration-300">+</span>
+                <button onclick="toggleAccordion()" class="w-full p-6 text-left flex justify-between items-center hover:bg-[#B57A59]/5 transition-colors focus:outline-none">
+                    <span class="font-serifTC text-base md:text-lg tracking-wider text-[#3A322C]">交通指引 LOCATION & TRANSPORTATION</span>
+                    <span id="accordionIcon" class="text-[#B57A59] text-2xl font-light transition-transform duration-300">+</span>
                 </button>
                 <div id="accordionContent" class="accordion-content">
-                    <div class="p-6 pt-2 border-t border-[#d4a373]/15 space-y-4 text-sm text-[#3a3d3c]/90 leading-relaxed font-serifTC">
+                    <div class="p-6 pt-2 border-t border-[#B57A59]/15 space-y-4 text-sm text-[#3A322C]/90 leading-relaxed font-serifTC">
                         <div>
-                            <h4 class="font-semibold text-[#8da399] mb-1">【捷運搭乘】</h4>
-                            <p class="no-wrap">捷運板南線至 <span class="font-medium text-[#d4a373]">善導寺站</span>，自 2 號出口步行約 1 分鐘即可抵達。</p>
+                            <h4 class="font-semibold text-[#B57A59] mb-1">【捷運搭乘】</h4>
+                            <p class="no-wrap">捷運板南線至 <span class="font-medium text-[#B57A59]">善導寺站</span>，自 2 號出口步行約 1 分鐘即可抵達。</p>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-[#8da399] mb-1">【公車搭乘】</h4>
-                            <p class="no-wrap">搭乘公車至 <span class="font-medium text-[#d4a373]">捷運善導寺站</span>，步行即可抵達 <span class="font-medium text-[#d4a373]">台北喜來登大飯店</span>。</p>
+                            <h4 class="font-semibold text-[#B57A59] mb-1">【公車搭乘】</h4>
+                            <p class="no-wrap">搭乘公車至 <span class="font-medium text-[#B57A59]">捷運善導寺站</span>，步行即可抵達 <span class="font-medium text-[#B57A59]">台北喜來登大飯店</span>。</p>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-[#8da399] mb-1">【自行開車 / 停車資訊】</h4>
-                            <p class="no-wrap">飯店地下停車場位於 <span class="font-medium text-[#d4a373]">台北市中正區忠孝東路一段12號</span>，提供賓客免費停車折抵。</p>
+                            <h4 class="font-semibold text-[#B57A59] mb-1">【自行開車 / 停車資訊】</h4>
+                            <p class="no-wrap">飯店地下停車場位於 <span class="font-medium text-[#B57A59]">台北市中正區忠孝東路一段12號</span>，提供賓客免費停車折抵。</p>
                         </div>
                     </div>
                 </div>
@@ -292,10 +295,10 @@
     <!-- RSVP Section -->
     <section id="rsvp" class="py-20 px-6 max-w-2xl mx-auto">
         <div class="text-center mb-10 space-y-2">
-            <p class="font-cormorant text-sm tracking-[0.3em] text-[#8da399] uppercase">ATTENDANCE CONFIRMATION</p>
-            <h2 class="font-serifTC text-2xl md:text-3xl font-light text-[#3a3d3c] tracking-widest">出席回函</h2>
-            <div class="w-10 h-[1px] bg-[#d4a373] mx-auto"></div>
-            <p class="text-xs text-[#3a3d3c]/60 pt-2 font-serifTC">請於 2026 年 9 月 25 日前填寫完畢，謝謝您的配合</p>
+            <p class="font-cormorant text-sm tracking-[0.3em] text-[#C7B299] uppercase font-semibold">ATTENDANCE CONFIRMATION</p>
+            <h2 class="font-serifTC text-2xl md:text-3xl font-light text-[#3A322C] tracking-widest">出席回函</h2>
+            <div class="w-10 h-[1px] bg-[#B57A59] mx-auto"></div>
+            <p class="text-xs text-[#3A322C]/70 pt-2 font-serifTC">請於 2026 年 9 月 25 日前填寫完畢，謝謝您的配合</p>
         </div>
 
         <!-- Hidden Iframe for Silent Submission to Google Form -->
@@ -306,18 +309,18 @@
 
             <!-- Field 1: Name NAME -->
             <div class="space-y-2">
-                <label class="block text-xs font-serifTC tracking-wider text-[#8da399] uppercase">
+                <label class="block text-xs font-serifTC tracking-wider text-[#B57A59] uppercase font-semibold">
                     姓名 NAME <span class="text-red-400">*</span>
                 </label>
-                <input type="text" name="entry.44710181" required class="w-full px-4 py-3 rounded-xl border border-[#d4a373]/30 focus:outline-none focus:border-[#d4a373] bg-[#fbf9f5]/50 text-sm transition-colors" placeholder="">
+                <input type="text" name="entry.44710181" required class="w-full px-4 py-3 rounded-xl border border-[#C7B299]/40 focus:outline-none focus:border-[#B57A59] bg-[#F2ECE4]/40 text-sm transition-colors" placeholder="">
             </div>
 
             <!-- Field 2: Relationship RELATIONSHIP -->
             <div class="space-y-2">
-                <label class="block text-xs font-serifTC tracking-wider text-[#8da399] uppercase">
+                <label class="block text-xs font-serifTC tracking-wider text-[#B57A59] uppercase font-semibold">
                     與新人關係 RELATIONSHIP <span class="text-red-400">*</span>
                 </label>
-                <select name="entry.1619546356" required class="w-full px-4 py-3 rounded-xl border border-[#d4a373]/30 focus:outline-none focus:border-[#d4a373] bg-[#fbf9f5]/50 text-sm text-[#3a3d3c] transition-colors">
+                <select name="entry.1619546356" required class="w-full px-4 py-3 rounded-xl border border-[#C7B299]/40 focus:outline-none focus:border-[#B57A59] bg-[#F2ECE4]/40 text-sm text-[#3A322C] transition-colors">
                     <option value="" disabled selected>請選擇關係</option>
                     <option value="上軒家人親戚">上軒家人親戚</option>
                     <option value="上軒好友">上軒好友</option>
@@ -330,20 +333,20 @@
 
             <!-- Field 3: Attendance Count ATTENDANCE NUMBER -->
             <div class="space-y-2">
-                <label class="block text-xs font-serifTC tracking-wider text-[#8da399] uppercase">
+                <label class="block text-xs font-serifTC tracking-wider text-[#B57A59] uppercase font-semibold">
                     參加午宴人數 ATTENDANCE NUMBER <span class="text-red-400">*</span>
                 </label>
-                <input type="number" id="attendanceInput" name="entry.768470855" min="0" required oninput="toggleDynamicFields()" placeholder="不出席請填 0" class="w-full px-4 py-3 rounded-xl border border-[#d4a373]/30 focus:outline-none focus:border-[#d4a373] bg-[#fbf9f5]/50 text-sm transition-colors">
+                <input type="number" id="attendanceInput" name="entry.768470855" min="0" required oninput="toggleDynamicFields()" placeholder="不出席請填 0" class="w-full px-4 py-3 rounded-xl border border-[#C7B299]/40 focus:outline-none focus:border-[#B57A59] bg-[#F2ECE4]/40 text-sm transition-colors">
             </div>
 
             <!-- Dynamic Conditional Fields (Shown only when Attendance > 0) -->
-            <div id="dynamicFields" class="space-y-6 hidden border-t border-[#d4a373]/20 pt-6">
+            <div id="dynamicFields" class="space-y-6 hidden border-t border-[#B57A59]/20 pt-6">
                 <!-- Field 4: Dietary Requirements DIETARY REQUIREMENT -->
                 <div class="space-y-2">
-                    <label class="block text-xs font-serifTC tracking-wider text-[#8da399] uppercase">
+                    <label class="block text-xs font-serifTC tracking-wider text-[#B57A59] uppercase font-semibold">
                         飲食需求 DIETARY REQUIREMENT
                     </label>
-                    <select name="entry.551562185" class="w-full px-4 py-3 rounded-xl border border-[#d4a373]/30 focus:outline-none focus:border-[#d4a373] bg-[#fbf9f5]/50 text-sm text-[#3a3d3c] transition-colors">
+                    <select name="entry.551562185" class="w-full px-4 py-3 rounded-xl border border-[#C7B299]/40 focus:outline-none focus:border-[#B57A59] bg-[#F2ECE4]/40 text-sm text-[#3A322C] transition-colors">
                         <option value="葷食" selected>葷食</option>
                         <option value="素食">素食</option>
                     </select>
@@ -351,10 +354,10 @@
 
                 <!-- Field 5: High Chair Needed HIGH CHAIR NEEDED -->
                 <div class="space-y-2">
-                    <label class="block text-xs font-serifTC tracking-wider text-[#8da399] uppercase">
+                    <label class="block text-xs font-serifTC tracking-wider text-[#B57A59] uppercase font-semibold">
                         是否需要兒童椅 HIGH CHAIR NEEDED
                     </label>
-                    <select name="entry.615031120" class="w-full px-4 py-3 rounded-xl border border-[#d4a373]/30 focus:outline-none focus:border-[#d4a373] bg-[#fbf9f5]/50 text-sm text-[#3a3d3c] transition-colors">
+                    <select name="entry.615031120" class="w-full px-4 py-3 rounded-xl border border-[#C7B299]/40 focus:outline-none focus:border-[#B57A59] bg-[#F2ECE4]/40 text-sm text-[#3A322C] transition-colors">
                         <option value="No" selected>No</option>
                         <option value="Yes">Yes</option>
                     </select>
@@ -362,10 +365,10 @@
 
                 <!-- Field 6: Favored Pastry FAVORED PASTRY -->
                 <div class="space-y-2">
-                    <label class="block text-xs font-serifTC tracking-wider text-[#8da399] uppercase">
+                    <label class="block text-xs font-serifTC tracking-wider text-[#B57A59] uppercase font-semibold">
                         喜餅種類 FAVORED PASTRY
                     </label>
-                    <select name="entry.1109238846" class="w-full px-4 py-3 rounded-xl border border-[#d4a373]/30 focus:outline-none focus:border-[#d4a373] bg-[#fbf9f5]/50 text-sm text-[#3a3d3c] transition-colors">
+                    <select name="entry.1109238846" class="w-full px-4 py-3 rounded-xl border border-[#C7B299]/40 focus:outline-none focus:border-[#B57A59] bg-[#F2ECE4]/40 text-sm text-[#3A322C] transition-colors">
                         <option value="最喜歡餅乾（會獲得雙層餅乾）" selected>最喜歡餅乾（會獲得雙層餅乾）</option>
                         <option value="喜歡傳統中式大餅＋餅乾">喜歡傳統中式大餅＋餅乾</option>
                     </select>
@@ -374,36 +377,36 @@
 
             <!-- Field 7: Invitation Preference INVITATION PREFERENCE -->
             <div class="space-y-2">
-                <label class="block text-xs font-serifTC tracking-wider text-[#8da399] uppercase">
+                <label class="block text-xs font-serifTC tracking-wider text-[#B57A59] uppercase font-semibold">
                     喜帖我喜歡電子 OR 紙本 (電子請留下信箱，紙本請留下地址) INVITATION PREFERENCE <span class="text-red-400">*</span>
                 </label>
-                <input type="text" name="entry.965824239" required placeholder="請填寫 Email 或郵寄地址" class="w-full px-4 py-3 rounded-xl border border-[#d4a373]/30 focus:outline-none focus:border-[#d4a373] bg-[#fbf9f5]/50 text-sm transition-colors">
+                <input type="text" name="entry.965824239" required placeholder="請填寫 Email 或郵寄地址" class="w-full px-4 py-3 rounded-xl border border-[#C7B299]/40 focus:outline-none focus:border-[#B57A59] bg-[#F2ECE4]/40 text-sm transition-colors">
             </div>
 
             <!-- Field 8: Blessings MESSAGE / BLESSINGS -->
             <div class="space-y-2">
-                <label class="block text-xs font-serifTC tracking-wider text-[#8da399] uppercase">
+                <label class="block text-xs font-serifTC tracking-wider text-[#B57A59] uppercase font-semibold">
                     備註或給新人的祝福 MESSAGE / BLESSINGS
                 </label>
-                <textarea name="entry.1082579446" rows="3" placeholder="想對我們說的話..." class="w-full px-4 py-3 rounded-xl border border-[#d4a373]/30 focus:outline-none focus:border-[#d4a373] bg-[#fbf9f5]/50 text-sm transition-colors"></textarea>
+                <textarea name="entry.1082579446" rows="3" placeholder="想對我們說的話..." class="w-full px-4 py-3 rounded-xl border border-[#C7B299]/40 focus:outline-none focus:border-[#B57A59] bg-[#F2ECE4]/40 text-sm transition-colors"></textarea>
             </div>
 
             <!-- Submit Button -->
-            <button type="submit" class="w-full py-4 bg-[#d4a373] hover:bg-[#b07d62] text-white font-serifTC tracking-widest rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-sm uppercase">
+            <button type="submit" class="w-full py-4 bg-[#B57A59] hover:bg-[#965E3E] text-white font-serifTC tracking-widest rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-sm uppercase">
                 送出回函 SUBMIT RSVP
             </button>
         </form>
 
         <!-- Submission Success Alert Card -->
         <div id="successCard" class="hidden v-card rounded-3xl p-8 text-center space-y-4 mt-6">
-            <div class="w-12 h-12 bg-[#8da399]/20 text-[#8da399] rounded-full flex items-center justify-center mx-auto text-2xl font-bold">✓</div>
-            <h3 class="font-serifTC text-2xl text-[#d4a373]">感謝您的回覆！</h3>
-            <p class="text-sm text-[#3a3d3c]/80 font-serifTC">我們已順利收到您的出席資訊，期待在婚禮當天與您熱情相見！</p>
+            <div class="w-12 h-12 bg-[#B57A59]/20 text-[#B57A59] rounded-full flex items-center justify-center mx-auto text-2xl font-bold">✓</div>
+            <h3 class="font-serifTC text-2xl text-[#B57A59]">感謝您的回覆！</h3>
+            <p class="text-sm text-[#3A322C]/80 font-serifTC">我們已順利收到您的出席資訊，期待在婚禮當天與您熱情相見！</p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-8 text-center text-xs text-[#8da399] border-t border-[#d4a373]/20 font-cormorant tracking-widest">
+    <footer class="py-8 text-center text-xs text-[#C7B299] border-t border-[#B57A59]/20 font-cormorant tracking-widest">
         <p>© 2026 LIN & WEI WEDDING. ALL RIGHTS RESERVED.</p>
     </footer>
 
